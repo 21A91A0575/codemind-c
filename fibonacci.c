@@ -1,17 +1,15 @@
 #include<stdio.h>
 int main()
 {
-    int i,x,y,t,n;
-    scanf("%d",&n);
-    x=0;
-    y=1;
-    printf("%d ",x);
-    while(n>1)
+    int n1=0,n2=1,n3,i,number;
+    scanf("%d ",&number);
+    printf("%d %d ",n1,n2);
+    for(i=2;i<number;++i)
     {
-        t=x;
-        x=x+y;
-        printf("%d ",x);
-        y=t;
-        n-=1;
+        n3=n1+n2;
+        printf("%d ",n3);
+        n1=n2;
+        n2=n3;
     }
+    return 0;
 }

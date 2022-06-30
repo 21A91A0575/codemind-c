@@ -32,11 +32,11 @@ int main()
             }
         }
     }
-    if(s==l&&c==2)
+    if(s==l && c==2)
     {
         printf("Mega Prime");
     }
-    else if(l!=s||c>2)
+    else if(l!=s || c>2)
     {
         printf("Not Mega Prime");
     }

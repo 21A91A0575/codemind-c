@@ -1,26 +1,32 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,m,j,c,k=0;
+    int i,j,n,m,c=0;
     scanf("%d",&n);
     for(i=1;i<=n;i++)
     {
-        m=i;
+        int s=0;
         if(n%i==0)
         {
-            c=0;
-            for(j=1;j<=m;j++)
+            //int s=0;
+            for(j=1;j<=i;j++)
             {
-                if(m%j==0)
+                if(i%j==0)
                 {
-                    c++;
+                    s++;
                 }
             }
-            if(c!=2)
+            if(s!=2)
             {
-                k++;
+                c++;
             }
+            //printf("%d",s);
         }
+        /*printf("%d",s);
+        if(s!=2 && s<2)
+        {
+            c++;
+        }*/
     }
-    printf("%d",k);
+    printf("%d",c);
 }
